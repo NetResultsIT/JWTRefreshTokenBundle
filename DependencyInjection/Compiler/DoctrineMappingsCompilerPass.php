@@ -59,14 +59,9 @@ final class DoctrineMappingsCompilerPass implements CompilerPassInterface
     {
         $nameSpace = 'Gesdinet\JWTRefreshTokenBundle\Entity';
         $mappings = [
-            realpath(dirname(dirname(__DIR__)).'/Resources/config/orm/doctrine-orm') => $nameSpace,
+            realpath(dirname(dirname(__DIR__)).'/Resources/config/orm') => $nameSpace,
         ];
 
-        if (isset($config['refresh_token_class']) || isset($config['refresh_token_entity'])) {
-            $mappings[realpath(dirname(dirname(__DIR__)).'/Resources/config/orm/doctrine-superclass')] = $nameSpace;
-        } else {
-            $mappings[realpath(dirname(dirname(__DIR__)).'/Resources/config/orm/doctrine-entity')] = $nameSpace;
-        }
 
         return DoctrineOrmMappingsPass::createXmlMappingDriver($mappings);
     }
