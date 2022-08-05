@@ -1,11 +1,21 @@
 {
-  "name" : "gesdinet/jwt-refresh-token-bundle",
+  "name" : "netresultsit/jwt-refresh-token-bundle",
   "description" : "Implements a refresh token system over Json Web Tokens in Symfony",
   "type" : "symfony-bundle",
-  "authors" : [{
-    "name" : "Marcos Gómez Vilches",
-    "email" : "marcos@gesdinet.com"
-  }],
+  "authors": [
+    {
+      "name": "Marcos Gómez Vilches",
+      "email": "marcos@gesdinet.com"
+    },
+    {
+      "name": "Roberto Santini",
+      "email": "santini@netresults.it"
+    },
+    {
+      "name": "Filippo Giacchè",
+      "email": "giacche@netresults.it"
+    }
+  ],
   "keywords" : [
     "jwt refresh token bundle symfony json web"
   ],
